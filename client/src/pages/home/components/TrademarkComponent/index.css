@@ -1,0 +1,138 @@
+.trademark-component {
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.trademark-component .top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  position: relative;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.trademark-component .top-bar .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.trademark-component .top-bar .title img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.trademark-component .top-bar .title h2 {
+  position: relative;
+  bottom: -3px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #686868;
+}
+
+.trademark-component .top-bar a {
+  position: relative;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.trademark-component .top-bar a button {
+  outline: none;
+  background: none;
+  border: 2px solid #A5A5A5;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #616161;
+  font-family: 'Poppins';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.trademark-component .top-bar a button:hover {
+  border: 2px solid #F37990;
+  color: #cf3b56;
+}
+
+.trademark-component .trademarks-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 10px 10px;
+}
+
+.trademark-component .trademarks-list .trademark-item {
+  font-family: 'Poppins';
+  max-width: 220px;
+  max-height: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 4px;
+  padding: 5px 20px;
+  background: #303030;
+  border: 2px solid #303030;
+  color: #cecece;
+  display: block;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.trademark-component .trademarks-list .trademark-item:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: none;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .trademark-component .trademarks-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .trademark-component .trademarks-list .trademark-item {
+    margin: 0;
+    margin-bottom: 5px;
+    max-width: 100%;
+    max-height: none;
+    width: 100% !important;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .trademark-component .top-bar a {
+    margin-right: 0px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

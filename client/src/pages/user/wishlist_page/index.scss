@@ -1,0 +1,160 @@
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.wishlist-page {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(200px, 1fr));
+    grid-gap: 15px;
+    font-family: 'Poppins';
+
+    a {
+        height: fit-content;
+        .card {
+            padding: 10px;
+            transition: 0.3s;
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            // border-radius: 15px;
+
+            .image {
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    max-width: 250px;
+                    max-height: 200px;
+                    animation: fade-appearence 1s;
+                }
+
+                @keyframes fade-appearence {
+                    from {
+                        opacity: 0;
+                    }
+                    to {
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            .informations {
+                display: flex;
+                flex-direction: column;
+                .rate-status {
+                    @include flex-row-center();
+
+                    .number-people-rate {
+                        position: relative;
+                        margin-left: 15px;
+                        font-size: 14px;
+                        color: rgb(68, 68, 68);
+                    }
+                }
+
+                .name {
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 5px 0;
+                }
+
+                .cost {
+                    @include flex-row-center();
+                    .current-cost {
+                        font-size: 16px;
+                        color: black;
+                        font-weight: 600;
+                    }
+
+                    .real-cost {
+                        font-size: 16px;
+                        color: rgb(107, 107, 107);
+                        text-decoration: line-through;
+                        margin-left: 20px;
+                    }
+
+                    .discount-persent {
+                        font-size: 16px;
+                        color: rgb(243, 92, 92);
+                        margin-left: 10px;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+            
+            .buttons {
+                button.add-to-wishlist {
+                    margin-top: 12px;
+                    outline: none;
+                    background: #e74462;
+                    border: none;
+                    width: 100%;
+                    padding: 8px 0;
+                    @include flex-row-center();
+                    justify-content: center;
+                    font-family: 'Poppins';
+                    .icon {
+                        width: 20px;
+                        height: auto;
+                        fill: white;
+                        margin-right: 10px;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        font-weight: 600;
+                        color: white;
+                    }
+                    &:hover {
+                        background: #cc304d;
+                    }
+                }
+
+            }
+
+            &:hover {
+                box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+            }
+        }
+    }
+
+
+    .circle-loading {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scale(0.6);
+        margin-top: 100px;
+    }
+
+    .empty-alert {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.5;
+        img {
+            width: 120px;
+            height: auto;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 15px;
+            white-space: nowrap;
+        }
+    }
+
+
+
+}

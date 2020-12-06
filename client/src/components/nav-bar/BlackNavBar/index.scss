@@ -1,0 +1,49 @@
+
+.black-nav-bar-container {
+    position: relative;
+    z-index: 0;
+    background: #252525;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    h4 {
+        position: relative;
+        padding: 10px 0;
+        margin-left: 50px;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        
+
+        &.active {
+            a {color: white;}
+            
+            &::before {
+                content: '';
+                width: 100%;
+                height: 5px;
+                position: absolute;
+                bottom: 0;
+                background: #F37990;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(160, 160, 160);
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .black-nav-bar-container {
+        display: none;
+    }
+}

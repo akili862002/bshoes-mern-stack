@@ -1,0 +1,174 @@
+.admin-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.admin-register .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.admin-register .indirect-login-methods {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.admin-register .indirect-login-methods .login-by-google {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #8d8d8d;
+  cursor: pointer;
+}
+
+.admin-register .indirect-login-methods .login-by-google .icon {
+  margin: 10px 10px;
+}
+
+.admin-register .indirect-login-methods .login-by-google:hover {
+  background: #f3f3f3;
+}
+
+.admin-register .register-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-register .register-box .box-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 47px;
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.admin-register .register-box .box-input .icon {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.admin-register .register-box .box-input input {
+  width: 100%;
+  margin-right: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.admin-register .register-box .box-input:focus-within {
+  border: 1px solid #0d85b4;
+}
+
+.admin-register .register-box .box-input:focus-within .icon {
+  opacity: 1;
+}
+
+.admin-register .register-box button {
+  width: 300px;
+  height: 47px;
+  border: none;
+  background: #EA5271;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-register .register-box button:hover {
+  background: #ce4560;
+}
+
+.admin-register .register-box .alert-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.admin-register .register-box .alert-error .icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+}
+
+.admin-register .register-box .alert-error h4 {
+  color: #c94b4b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.admin-register .recommend h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.admin-register .recommend h4 a {
+  font-weight: 600;
+  color: #008099;
+}
+
+@media screen and (max-width: 350px) {
+  .line-divide {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,72 @@
+
+@mixin flex-row-center-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slick-slide-component {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+
+    .top-bar {
+        @include flex-row-center-align();
+        margin: 10px;
+        
+
+        .title {
+            @include flex-row-center-align();
+
+            img {
+                $size-icon: 30px;
+                width: $size-icon;
+                height: $size-icon;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-left: 10px;
+                font-weight: 900;
+                color: rgb(99, 99, 99);
+            }
+        }
+
+        a {  // See more button
+            position: relative;
+            margin-right: 20px;
+            margin-left: auto;
+
+            button {
+
+                outline: none;
+                background: none;
+                border: 2px solid #A5A5A5;
+                border-radius: 20px;
+                padding: 5px 10px;
+    
+                color: #616161;
+                font-family: 'Poppins';
+                font-size: 15px;
+    
+                cursor: pointer;
+                
+                &:hover {
+                    border: 2px solid #F37990;
+                    color: #cf3b56;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slick-slide-component .top-bar a {
+        margin-right: 0px !important;
+    }
+}

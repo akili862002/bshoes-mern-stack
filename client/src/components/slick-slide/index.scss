@@ -1,0 +1,121 @@
+@mixin center-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide {
+    position: relative;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    float: left;
+
+    ul {
+        position: relative;
+        left: 0;
+        right: 0;
+        display: flex;
+        li {
+            display: inline;
+            margin: 0 50px;
+
+            @keyframes smooth-appear {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .see-more-card {
+                @include center-children();
+                width: 200px;
+                height: 100%;
+                background: rgb(240, 240, 240);
+                border-radius: 30px;
+                h3 {
+                    color: rgb(75, 75, 75);
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
+    }
+
+    .control-slide {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: white;
+        border-radius: 50%;
+        @include center-children();
+        box-shadow: 0 0 6px rgba(54, 54, 54, 0.5);
+        cursor: pointer;
+
+        &.next-slide {
+            right: 10px;
+            img { margin-right: 8px}
+        }
+
+        &.prev-slide {
+            left: 10px;
+            img { margin-left: 8px}
+        }
+
+        &.hide {
+            display: none;
+        }
+
+        img {
+            width: 25px;
+            opacity: 0.6;
+        }
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slick-slide {
+        width: 100% !important;
+        height: 100%;
+        overflow: hidden;
+
+        ul {
+            height: 100%;
+            // padding: 0 10px;
+
+            // Hide scroll but while still being able to scroll
+            overflow-x: scroll;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            &::-webkit-scrollbar { 
+                height: 0;  /* Safari and Chrome */
+            }
+
+        }
+
+        ul li {
+            margin: 10px !important;
+            .image-box {
+                min-height: 130px !important;
+                height: fit-content !important;
+            }
+        }
+
+        li.see-more-btn {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        .control-slide {
+            display: none;
+        }
+    }
+}

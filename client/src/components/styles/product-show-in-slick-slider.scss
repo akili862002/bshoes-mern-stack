@@ -1,0 +1,141 @@
+@mixin flex-row-center-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin move-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin children-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-slide {
+    ul li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 200px;
+
+        .image-box {
+            @include flex-row-center-align();
+            justify-content: center;
+            overflow: hidden;
+
+        }
+        
+        .rate-product {
+            @include flex-row-center-align();
+            width: 100%;
+            padding-top: 20px;
+
+            .number-people-rate {
+                color: rgb(110, 110, 110);
+                margin-right: 10px;
+                margin-left: auto;
+            }
+        }
+
+        .name-product {
+            font-family: 'Poppins';
+            font-weight: 600;
+            padding: 10px 0;
+        }
+
+        .cost-product.discounting {
+            @include flex-row-center-align();
+            .current-cost {
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .real-cost {
+                margin-left: 15px;
+                font-size: 15px;
+                font-weight: 500;
+                color: rgb(133, 133, 133);
+                text-decoration: line-through;
+            }
+        }
+
+        .cost-product.not-discount {
+            .current-cost {
+                display: none;
+            }
+            .real-cost {
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+
+        .sale-sign {
+            position: absolute;
+            top: 0;
+            right: 4px;
+            
+            &.discounting {
+                img{
+                    position: relative;
+                    width: 40px;
+                }
+    
+                h5 {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                }
+            }
+
+            &.not-discount {
+                display: none;
+            }
+        }
+
+        .buttons {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            margin: 5px;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: 0.3s;
+            .btn {
+                $box-size: 32px;
+                position: relative;
+                width: $box-size;
+                height: $box-size;
+                border-radius: 50%;
+                background: rgba(0, 0, 0, .6);
+                margin-bottom: 5px;
+                svg {
+                    @include move-center();
+                    position: absolute;
+                    width: $box-size/2;
+                    height: $box-size/2;
+                    fill: white;
+                }
+
+                &:hover {
+                    background: black;
+    
+                    svg {
+                        fill: #ff97aa;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .buttons {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+}

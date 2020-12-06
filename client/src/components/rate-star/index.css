@@ -1,0 +1,14 @@
+.rate-stars-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rate-stars-line img {
+  margin-right: 5px;
+}
+/*# sourceMappingURL=index.css.map */

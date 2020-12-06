@@ -1,0 +1,6 @@
+{
+    "mongoURL": "",
+    "jwtSecret": "",
+    "admin-private-key": "",
+    "google_client_id": ""
+}

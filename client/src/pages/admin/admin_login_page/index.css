@@ -1,0 +1,166 @@
+.admin-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.admin-login .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.admin-login .direct-login {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin-login .direct-login .box-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 47px;
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.admin-login .direct-login .box-input .icon {
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+}
+
+.admin-login .direct-login .box-input input {
+  width: 100%;
+  margin-right: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.admin-login .direct-login .box-input:focus-within {
+  border: 1px solid #0d85b4;
+}
+
+.admin-login .direct-login .box-input:focus-within .icon {
+  opacity: 1;
+}
+
+.admin-login .direct-login button {
+  width: 300px;
+  height: 47px;
+  border: none;
+  background: #EA5271;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin-login .direct-login button:hover {
+  background: #ce4560;
+}
+
+.admin-login .direct-login .alert-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 300px;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-name: top-down-appear;
+          animation-name: top-down-appear;
+}
+
+.admin-login .direct-login .alert-error .icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 8px;
+}
+
+.admin-login .direct-login .alert-error h4 {
+  color: #c94b4b;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@-webkit-keyframes top-down-appear {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20.67px;
+  }
+}
+
+@keyframes top-down-appear {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20.67px;
+  }
+}
+
+.admin-login .recommend h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.admin-login .recommend h4 a {
+  font-weight: 600;
+  color: #008099;
+}
+
+@media screen and (max-width: 350px) {
+  .line-divide {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

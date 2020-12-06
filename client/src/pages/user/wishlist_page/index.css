@@ -1,0 +1,222 @@
+.wishlist-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+  font-family: 'Poppins';
+}
+
+.wishlist-page a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.wishlist-page a .card {
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.wishlist-page a .card .image {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wishlist-page a .card .image img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 200px;
+  -webkit-animation: fade-appearence 1s;
+          animation: fade-appearence 1s;
+}
+
+@-webkit-keyframes fade-appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-appearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wishlist-page a .card .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wishlist-page a .card .informations .rate-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wishlist-page a .card .informations .rate-status .number-people-rate {
+  position: relative;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #444444;
+}
+
+.wishlist-page a .card .informations .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.wishlist-page a .card .informations .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wishlist-page a .card .informations .cost .current-cost {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.wishlist-page a .card .informations .cost .real-cost {
+  font-size: 16px;
+  color: #6b6b6b;
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.wishlist-page a .card .informations .cost .discount-persent {
+  font-size: 16px;
+  color: #f35c5c;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.wishlist-page a .card .buttons button.add-to-wishlist {
+  margin-top: 12px;
+  outline: none;
+  background: #e74462;
+  border: none;
+  width: 100%;
+  padding: 8px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins';
+}
+
+.wishlist-page a .card .buttons button.add-to-wishlist .icon {
+  width: 20px;
+  height: auto;
+  fill: white;
+  margin-right: 10px;
+}
+
+.wishlist-page a .card .buttons button.add-to-wishlist p {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.wishlist-page a .card .buttons button.add-to-wishlist:hover {
+  background: #cc304d;
+}
+
+.wishlist-page a .card:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.wishlist-page .circle-loading {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) scale(0.6);
+          transform: translateX(-50%) scale(0.6);
+  margin-top: 100px;
+}
+
+.wishlist-page .empty-alert {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+}
+
+.wishlist-page .empty-alert img {
+  width: 120px;
+  height: auto;
+}
+
+.wishlist-page .empty-alert h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=index.css.map */

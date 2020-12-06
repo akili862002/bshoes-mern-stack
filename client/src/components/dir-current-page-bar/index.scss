@@ -1,0 +1,88 @@
+.dir-current-page-bar {
+    width: 100%;
+    background: #3D3D3D;
+    color: white;
+    padding: 30px;
+    font-family: 'Poppins';
+
+    .icon {
+        fill: white;
+        width: 36px;
+        height: auto;
+    }
+
+    .current-dir-show {
+        display: flex;
+        flex-direction: row;
+        a {
+            color: rgb(196, 196, 196);
+            font-weight: 100;
+            font-size: 14px;
+
+            &:last-child {
+                color: white;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 10px;
+
+        h1 {
+            font-size: 28px;
+            margin-left: 17px;
+        }
+    }
+}
+
+.mini-dir-current-page-bar {
+    .current-dir-show {
+        display: flex;
+        flex-direction: row;
+        a {
+            color: #8d8d8d;
+            font-weight: 400;
+            font-size: 14px;
+
+            &:last-child {
+                color: black;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .dir-current-page-bar {
+        .current-dir-show {
+            display: none;
+        }
+        .title {
+            justify-content: center;
+            h1 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .dir-current-page-bar {
+        .title {
+            justify-content: center;
+            h1 {
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+
+@mixin flex-row-center-align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trademark-component {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    .top-bar {
+        @include flex-row-center-align();
+        margin: 10px;
+        position: relative;
+        justify-content: end;
+        
+
+        .title {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                $size-icon: 30px;
+                width: $size-icon;
+                height: $size-icon;
+                margin-right: 10px;
+                position: relative;
+            }
+            
+            h2 {
+                position: relative;
+                bottom: -3px;
+                font-size: 20px;
+                font-weight: 900;
+                color: #686868;
+            }
+        }
+
+        a {  // See more button
+            position: relative;
+            margin-right: 20px;
+            margin-left: auto;
+
+            button {
+
+                outline: none;
+                background: none;
+                border: 2px solid #A5A5A5;
+                border-radius: 20px;
+                padding: 5px 10px;
+    
+                color: #616161;
+                font-family: 'Poppins';
+                font-size: 15px;
+    
+                cursor: pointer;
+                
+                &:hover {
+                    border: 2px solid #F37990;
+                    color: #cf3b56;
+                }
+            }
+        }
+
+    }
+    .trademarks-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin: 10px 10px;
+
+        .trademark-item {
+            font-family: 'Poppins';
+            max-width: 220px;
+            max-height: 50px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 4px;
+            padding: 5px 20px;
+            background: rgb(48, 48, 48);
+            border: 2px solid rgb(48, 48, 48);
+            color: rgb(206, 206, 206);
+            display: block;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            &:hover {
+                transition: 0.3s;
+                background: none;
+                color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .trademark-component .trademarks-list {
+        flex-direction: column;
+        .trademark-item {
+            margin: 0;
+            margin-bottom: 5px;
+            max-width: 100%;
+            max-height: none;
+            width: 100% !important;
+            white-space: normal;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .trademark-component .top-bar a {
+        margin-right: 0px !important;
+    }
+}
+

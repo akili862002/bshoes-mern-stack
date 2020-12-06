@@ -1,0 +1,195 @@
+.user-login-page .user-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.user-login-page .user-login .title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.user-login-page .user-login .indirect-login-methods {
+  margin-top: 10px;
+}
+
+.user-login-page .user-login .indirect-login-methods .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #8d8d8d;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.user-login-page .user-login .indirect-login-methods .btn .icon {
+  margin: 10px 10px;
+}
+
+.user-login-page .user-login .indirect-login-methods .btn:hover {
+  background: #f3f3f3;
+}
+
+.user-login-page .user-login .direct-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.user-login-page .user-login .direct-login .box-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 47px;
+  border: 1px solid #bebebe;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.user-login-page .user-login .direct-login .box-input .icon {
+  margin: 10px;
+  width: 20px;
+  height: auto;
+  opacity: 0.5;
+}
+
+.user-login-page .user-login .direct-login .box-input input {
+  width: 100%;
+  margin-right: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.user-login-page .user-login .direct-login .box-input:focus-within {
+  border: 1px solid #0d85b4;
+}
+
+.user-login-page .user-login .direct-login .box-input:focus-within .icon {
+  opacity: 1;
+}
+
+.user-login-page .user-login .direct-login button {
+  width: 300px;
+  height: 47px;
+  border: none;
+  background: #EA5271;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-login-page .user-login .direct-login button:hover {
+  background: #ce4560;
+}
+
+.user-login-page .user-login .direct-login .alert-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.user-login-page .user-login .direct-login .alert-error h4 {
+  color: #dd3b3b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-login-page .user-login .recommend h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.user-login-page .user-login .recommend h4 a {
+  font-weight: 600;
+  color: #008099;
+}
+
+.user-login-page .loading-log-in {
+  position: fixed;
+  z-index: 999;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-login-page .loading-log-in .circle-loading {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+@media screen and (max-width: 350px) {
+  .line-divide {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

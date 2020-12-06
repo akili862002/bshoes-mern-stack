@@ -1,0 +1,135 @@
+@mixin flex-row-and-align-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin move-to-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$button-width: 300px;
+$button-height: 47px;
+
+.admin-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .direct-login {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        .box-input {
+            @include flex-row-and-align-center();
+            width: $button-width;
+            height: 47px;
+            border: 1px solid rgb(190, 190, 190);
+            margin-bottom: 20px;
+            border-radius: 5px;
+
+            .icon {
+                margin: 10px;
+                $icon-size: 20px;
+                width: $icon-size;
+                height: $icon-size;
+                opacity: 0.5;
+            }
+
+            input {
+                width: 100%;
+                margin-right: 5px;
+                font-size: 16px;
+                
+                border: none;
+                outline: none;
+
+            }
+
+            &:focus-within {
+                border: 1px solid rgb(13, 133, 180);
+                .icon {
+                    opacity: 1;
+                }
+            }
+
+        }
+
+        button {
+            width: $button-width;
+            height: $button-height;
+            border: none;
+            background: #EA5271;
+            color: white;
+            font-family: 'Poppins';
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            outline: none;
+            cursor: pointer;
+
+            @include move-to-center();
+
+            &:hover {
+                background: #ce4560;
+            }
+
+        }
+
+        .alert-error {
+            @include flex-row-and-align-center();
+            margin-top: -10px;
+            margin-bottom: 10px;
+            width: $button-width;
+            animation-duration: 0.3s;
+            animation-name: top-down-appear;
+            .icon {
+                $icon-size: 18px;
+                width: $icon-size;
+                height: $icon-size;
+                margin: 0 8px;
+            }
+
+            h4 {
+                color: rgb(201, 75, 75);
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        @keyframes top-down-appear {
+            from { height: 0; }
+            to { height: 20.67px; }
+        }
+    }
+
+    .recommend {
+        h4 {
+            font-size: 15px;
+            font-weight: 300;
+            
+            a {
+                font-weight: 600;
+                color: #008099;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    .line-divide {
+        width: 100% !important;
+    }
+}

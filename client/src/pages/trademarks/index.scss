@@ -1,0 +1,111 @@
+@mixin children-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trademarks-page {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+    font-family: 'Poppins';
+    min-height: 100vh;
+
+    .circle-loading {
+        transform: scale(0.7);
+        margin-top: 100px;
+    }
+
+    a {
+        margin: 20px;
+        .trademark-card {
+            display: flex;
+            flex-direction: column;
+            &:hover {
+                .images-container::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    height: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(200, 200, 200, 0.1);
+                    border-radius: 15px;
+                }
+            }
+
+            .texts {
+                margin-top: 10px;
+                .trademark {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .number-products {
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: rgb(95, 95, 95);
+                }
+            }
+
+            .images-container {
+                overflow: hidden;
+                position: relative;
+                $width-box: 300px;
+                $heigh-box: auto;
+                width: $width-box;
+                height: $heigh-box;
+                border-radius: 15px;
+                // box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+                border: 1px solid rgb(190, 190, 190);
+                img {
+                    max-width: 100%;
+                    animation: smooth-appear 0.3s;
+                }
+
+                @keyframes smooth-appear {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                &.grid {
+                    
+                    display: grid;
+                    grid-template-columns: 200px 100px;
+                    grid-template-rows: 70px 70px;
+                    grid-template-areas:
+                        "img-1 img-2"
+                        "img-1 img-3"
+                    ;
+    
+                    .image {
+                        padding: 5px;
+                        @include children-center();
+                    }
+                    .image:nth-child(1) {
+                        grid-area: img-1;
+                    }
+                    .image:nth-child(2) {
+                        grid-area: img-2;
+                    }
+                    .image:nth-child(3) {
+                        grid-area: img-3;
+                    }
+                }
+    
+                &.single {
+                    display: block;
+                    .image {
+                        padding: 15px;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}

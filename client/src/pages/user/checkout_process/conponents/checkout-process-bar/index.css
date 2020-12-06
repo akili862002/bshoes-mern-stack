@@ -1,0 +1,102 @@
+.checkout-process-bar {
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-process-bar .lines-process {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.checkout-process-bar .lines-process .line-connect {
+  height: 10px;
+  width: 100%;
+  background: #D2D2D2;
+}
+
+.checkout-process-bar .lines-process .line-connect.active {
+  background: #C76375;
+}
+
+.checkout-process-bar .lines-process .steps {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.checkout-process-bar .lines-process .steps .step {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #767676;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-process-bar .lines-process .steps .step h3 {
+  position: absolute;
+  bottom: -70%;
+  font-family: 'Poppins';
+  font-size: 17px;
+  color: #999999;
+}
+
+.checkout-process-bar .lines-process .steps .step.active h3 {
+  color: #444444;
+}
+
+.checkout-process-bar .lines-process .steps .step.selector h3 {
+  color: #C76375;
+}
+
+@media screen and (max-width: 400px) {
+  .checkout-process-bar {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    padding: 30px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

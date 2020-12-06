@@ -1,0 +1,281 @@
+.fill-adress-in-checkout-process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.fill-adress-in-checkout-process .line {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.fill-adress-in-checkout-process .buttons button {
+  padding: 3px 15px;
+  outline: none;
+  margin: 5px 0;
+  margin-right: 10px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  border-radius: 6px;
+  color: #40B48A;
+  border: 1px solid #40B48A;
+  background: none;
+  cursor: pointer;
+}
+
+.fill-adress-in-checkout-process .buttons button.primary-btn {
+  background: #40B48A;
+  color: white;
+}
+
+.fill-adress-in-checkout-process .buttons button.gray-btn {
+  color: #6D6D6D;
+  border: 1px solid #898989;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #606060;
+  margin: 10px 0;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .alert-empty {
+  color: gray;
+  margin: 20px;
+  font-size: 14px;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list {
+  margin: 0 10px;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item {
+  position: relative;
+  border: 1px solid #6A6A6A;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item:not(.selector) {
+  cursor: pointer;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item.selector {
+  border: 1px solid #40B48A;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item p {
+  font-size: 13px;
+  color: #383838;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item p.name {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list .address-item .tick-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(30%, -30%);
+          transform: translate(30%, -30%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list button.add-new {
+  outline: none;
+  font-family: 'Poppins';
+  background: white;
+}
+
+.fill-adress-in-checkout-process .address-choosen-container .address-list button.add-new:hover {
+  border: 1px solid #C76375;
+  color: #C76375;
+}
+
+.fill-adress-in-checkout-process .dark-slide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fill-adress-in-checkout-process .address-editor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  padding: 5px 15px;
+  -webkit-animation-name: smooth-appear;
+          animation-name: smooth-appear;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs .input .title {
+  margin: 0;
+  margin-right: 20px;
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs .input input, .fill-adress-in-checkout-process .address-editor .inputs .input textarea {
+  margin-right: 0px;
+  margin-left: auto;
+  width: 300px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #7e7e7e;
+  padding: 5px;
+  resize: none;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs .input input:focus, .fill-adress-in-checkout-process .address-editor .inputs .input textarea:focus {
+  -webkit-box-shadow: 0 0 2px #058872;
+          box-shadow: 0 0 2px #058872;
+}
+
+.fill-adress-in-checkout-process .address-editor .inputs .input textarea {
+  min-height: 60px;
+}
+
+.fill-adress-in-checkout-process .address-editor .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.fill-adress-in-checkout-process .address-editor .buttons button:nth-child(2) {
+  margin-right: 0;
+}
+
+@-webkit-keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fill-adress-in-checkout-process .error-msg {
+  font-size: 12px;
+  color: #d41717;
+}
+
+@media screen and (max-width: 580px) {
+  .fill-adress-in-checkout-process .address-choosen-container {
+    padding: 10px;
+  }
+  .fill-adress-in-checkout-process .address-choosen-container .title {
+    text-align: center;
+  }
+  .fill-adress-in-checkout-process .address-choosen-container .alert-empty {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .fill-adress-in-checkout-process .address-editor .inputs {
+    margin: 10px;
+  }
+  .fill-adress-in-checkout-process .address-editor .inputs .input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .fill-adress-in-checkout-process .address-editor .inputs .input .title {
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .fill-adress-in-checkout-process .address-editor .inputs .input input, .fill-adress-in-checkout-process .address-editor .inputs .input textarea {
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */

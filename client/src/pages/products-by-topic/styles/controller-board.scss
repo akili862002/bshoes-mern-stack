@@ -1,0 +1,124 @@
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.products-by-topic-page {
+    font-family: "Poppins";
+    min-height: 100vh;
+
+    .current-dir-show {
+        margin: 27px ;
+    }
+
+    .main-board {
+        display: flex;
+        flex-direction: row;
+
+        .controller-board {
+            width: 200px;
+            min-width: 200px;
+            margin-left: 25px;
+
+            .box-title {
+                width: 100%;
+                padding: 10px 20px;
+                font-weight: 600;
+                
+                &.black-bg-theme {
+                    color: white;
+                    background: rgb(41, 41, 41);
+                    margin-bottom: 40px;
+                }
+                &.grey-bg-theme {
+                    color: rgb(39, 39, 39);
+                    background: #E1E1E1;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .selection-box {
+                .small-title {
+                    font-size: 17px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+    
+                .items {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 10px;
+                    user-select: none;
+
+                    .item {
+                        position: relative;
+                        @include flex-row-center();
+                        margin: 5px 0;
+                        cursor: pointer;
+                        color: rgb(99, 99, 99);
+
+                        img {
+                            margin-right: 8px;
+                        }
+
+                        img.shoes-img {
+                            width: 30px;
+                            height: auto;
+                        }
+
+                        img.checkbox {
+                            width: 22px;
+                            height: auto;
+                        }
+
+                        .color-box {
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 10px;
+                            &._white {
+                                background: white;
+                                border: 1px solid rgb(145, 145, 145);
+                            }
+                            &._grey {
+                                background: grey;
+                            }
+                            &._black{
+                                background: rgb(53, 53, 53);
+                            }
+                        }
+
+                        &.select {
+                            opacity: 1;
+                            .name {
+                                font-weight: 600;
+                                color: black;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .item.rate-star-select {
+                        opacity: 0.5;
+                        &.select {
+                            opacity: 1;
+                            .name {
+                                text-decoration: none;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .products-by-topic-page {
+        .current-dir-show,
+        .controller-board {
+            display: none;
+        }
+    }
+}

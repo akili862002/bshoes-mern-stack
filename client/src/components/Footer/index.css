@@ -1,0 +1,126 @@
+.footer {
+  width: 100%;
+  background: #121212;
+  color: white;
+  position: relative;
+  margin-top: 100px;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .note-from-dev {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: #d8d8d8;
+}
+
+.footer .title {
+  font-weight: 600;
+  display: inline-block;
+  font-family: 'Poppins';
+  padding: 5px 0;
+  border-bottom: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.footer .address-show {
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+.footer .address-show .address-text {
+  font-weight: 500;
+  color: #CBCBCB;
+  margin-bottom: 5px;
+}
+
+.footer .address-show .comment {
+  font-size: 13px;
+  color: #838383;
+}
+
+.footer .address-show .gmail-address {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .address-show .gmail-address p {
+  margin-left: 10px;
+}
+
+.footer .contact-me-show {
+  position: relative;
+  margin: 0 0 auto auto;
+  max-width: 250px;
+}
+
+.footer .contact-me-show .contact-methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.footer .contact-me-show .contact-methods .item {
+  margin-right: 10px;
+}
+
+.footer .contact-me-show .contact-methods .item img {
+  width: 35px;
+  height: auto;
+  opacity: 0.5;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer .contact-me-show .contact-methods .item img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer .card-info {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

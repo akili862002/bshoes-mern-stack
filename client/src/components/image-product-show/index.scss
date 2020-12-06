@@ -1,0 +1,148 @@
+@mixin center-children {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin move-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-product-show {
+    
+    .images  {
+        margin: 50px;
+    }
+
+    .slide {
+        background: white;
+        width: 100%;
+        height: 100%;
+        @include center-children();
+        
+        .item {
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                animation: smooth-appear 1s;
+            }
+
+            @keyframes smooth-appear {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+        }
+        
+    }
+
+    .slider {
+        @include flex-row-center();
+    }
+
+    .control-arrow {
+        $size-arrow: 14px;
+        $color-arrow: rgb(196, 99, 99);
+
+        &::before {
+            border-top: $size-arrow solid transparent !important;
+            border-bottom: $size-arrow solid transparent !important;
+        }
+
+        &.control-next::before {
+            border-left: $size-arrow solid $color-arrow;
+        }
+        &.control-prev::before {
+            border-right: $size-arrow solid $color-arrow;
+        }
+    }
+
+    .carousel {
+
+        .thumbs-wrapper {
+            margin: 0;
+            ul {
+                overflow: hidden;
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+
+    .thumbs {
+        display: flex;
+        flex-direction: row;
+        transform: none !important;
+        
+        .thumb {
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgb(172, 172, 172);
+            @include center-children();
+
+            &.selected {
+                border: 2px solid rgb(56, 56, 56);
+            }
+
+            img {
+                width: 100%  !important;
+                height: auto !important;
+            }
+        }
+    }
+
+    .skeleton-img {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        img.shoes-loading-animation {
+            width: 120px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-iteration-count: infinite;
+            animation-name: blinking-animation;
+            animation-duration: 2s;
+        }
+
+        @keyframes blinking-animation {
+            0% {
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 0.1;
+            }
+        }
+
+        .loading-animation-rect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+}

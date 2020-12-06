@@ -1,0 +1,144 @@
+.search-page {
+  font-family: "Poppins";
+  min-height: 100vh;
+}
+
+.search-page .current-dir-show {
+  margin: 27px;
+}
+
+.search-page .main-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.search-page .main-board .controller-board {
+  width: 200px;
+  min-width: 200px;
+  margin-left: 25px;
+}
+
+.search-page .main-board .controller-board .box-title {
+  width: 100%;
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.search-page .main-board .controller-board .box-title.black-bg-theme {
+  color: white;
+  background: #292929;
+  margin-bottom: 40px;
+}
+
+.search-page .main-board .controller-board .box-title.grey-bg-theme {
+  color: #272727;
+  background: #E1E1E1;
+  margin-bottom: 10px;
+}
+
+.search-page .main-board .controller-board .selection-box .small-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.search-page .main-board .controller-board .selection-box .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  color: #636363;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item img {
+  margin-right: 8px;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item img.shoes-img {
+  width: 30px;
+  height: auto;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item img.checkbox {
+  width: 22px;
+  height: auto;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item .color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item .color-box._white {
+  background: white;
+  border: 1px solid #919191;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item .color-box._grey {
+  background: grey;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item .color-box._black {
+  background: #353535;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item.select {
+  opacity: 1;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item.select .name {
+  font-weight: 600;
+  color: black;
+  text-decoration: underline;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item.rate-star-select {
+  opacity: 0.5;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item.rate-star-select.select {
+  opacity: 1;
+}
+
+.search-page .main-board .controller-board .selection-box .items .item.rate-star-select.select .name {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+  .search-page .current-dir-show,
+  .search-page .controller-board {
+    display: none;
+  }
+}
+/*# sourceMappingURL=controller-board.css.map */

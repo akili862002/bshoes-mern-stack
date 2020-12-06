@@ -1,0 +1,164 @@
+.hamburger-nav {
+  font-family: 'Poppins';
+}
+
+.hamburger-nav .btn {
+  position: fixed;
+  z-index: 100;
+  left: 20px;
+  top: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-nav .btn span {
+  width: 30px;
+  height: 4px;
+  margin: 3px;
+  background: #525252;
+  border-radius: 2px;
+}
+
+.hamburger-nav .btn span:nth-child(2) {
+  width: 20px;
+}
+
+.hamburger-nav .black-diaphragm {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(39, 39, 39, 0.5);
+}
+
+.hamburger-nav .list-items {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  z-index: 102;
+  padding-bottom: 50px;
+  top: 0;
+  left: -100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  overflow: auto;
+}
+
+.hamburger-nav .list-items a {
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.hamburger-nav .list-items a .login-register {
+  color: #F37990 !important;
+  font-size: 17px;
+}
+
+.hamburger-nav .list-items .divided-line {
+  width: 100%;
+  height: 0px;
+  border-top: 1px solid #b9b9b9;
+  margin: 5px 0;
+}
+
+.hamburger-nav .list-items h3.title {
+  padding: 3px 10px;
+  color: #424242;
+}
+
+.hamburger-nav .list-items.active {
+  left: 0;
+}
+
+.hamburger-nav .user-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hamburger-nav .user-intro .avatar-user {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.hamburger-nav .user-intro .avatar-user img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.hamburger-nav .user-intro .texts-user {
+  margin-left: 5px;
+}
+
+.hamburger-nav .user-intro .texts-user h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 150px;
+}
+
+.hamburger-nav .user-intro .texts-user h4 {
+  font-weight: 400;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.hamburger-nav .list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hamburger-nav .list-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hamburger-nav .list-btn a p {
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 741px) {
+  .hamburger-nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

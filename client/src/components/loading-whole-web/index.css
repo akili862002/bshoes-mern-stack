@@ -1,0 +1,40 @@
+
+.container-loading-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.container-loading-page .container-loader {
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+.container-loading-page.hide {
+    opacity: 0;
+    animation-name: fade-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-animation {
+    0% { 
+        opacity: 1;
+        display: flex;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+    }
+}

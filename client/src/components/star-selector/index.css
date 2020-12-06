@@ -1,0 +1,8 @@
+.star-selector {
+    display: flex;
+    flex-direction: row;
+}
+
+.star-selector img {
+    margin-right: 5px;
+}

@@ -1,0 +1,165 @@
+.products-by-event-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins';
+}
+
+.products-by-event-page .main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.products-by-event-page .main-title .icon {
+  width: 34px;
+  height: auto;
+}
+
+.products-by-event-page .line {
+  width: 70%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #6c6c6c), to(white));
+  background: linear-gradient(90deg, white 0%, #6c6c6c 50%, white 100%);
+}
+
+.products-by-event-page .main-board {
+  margin-top: 40px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.products-by-event-page .main-board .products-display-board {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 100px;
+}
+
+.products-by-event-page .main-board .products-display-board .card {
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.products-by-event-page .main-board .products-display-board .card .image {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-by-event-page .main-board .products-display-board .card .image img {
+  width: 100%;
+  max-width: 250px;
+  max-height: 200px;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .rate-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .rate-status .number-people-rate {
+  position: relative;
+  margin-left: 15px;
+  font-size: 14px;
+  color: #444444;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .cost .current-cost {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .cost .real-cost {
+  font-size: 16px;
+  color: #6b6b6b;
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.products-by-event-page .main-board .products-display-board .card .informations .cost .discount-persent {
+  font-size: 16px;
+  color: #f35c5c;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.products-by-event-page .main-board .products-display-board .card:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=index.css.map */

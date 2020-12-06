@@ -1,0 +1,143 @@
+.trademarks-page {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Poppins';
+  min-height: 100vh;
+}
+
+.trademarks-page .circle-loading {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin-top: 100px;
+}
+
+.trademarks-page a {
+  margin: 20px;
+}
+
+.trademarks-page a .trademark-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trademarks-page a .trademark-card:hover .images-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.1);
+  border-radius: 15px;
+}
+
+.trademarks-page a .trademark-card .texts {
+  margin-top: 10px;
+}
+
+.trademarks-page a .trademark-card .texts .trademark {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.trademarks-page a .trademark-card .texts .number-products {
+  font-size: 13px;
+  font-weight: 300;
+  color: #5f5f5f;
+}
+
+.trademarks-page a .trademark-card .images-container {
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  border: 1px solid #bebebe;
+}
+
+.trademarks-page a .trademark-card .images-container img {
+  max-width: 100%;
+  -webkit-animation: smooth-appear 0.3s;
+          animation: smooth-appear 0.3s;
+}
+
+@-webkit-keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.trademarks-page a .trademark-card .images-container.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 100px;
+      grid-template-columns: 200px 100px;
+  -ms-grid-rows: 70px 70px;
+      grid-template-rows: 70px 70px;
+      grid-template-areas: "img-1 img-2" "img-1 img-3";
+}
+
+.trademarks-page a .trademark-card .images-container.grid .image {
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trademarks-page a .trademark-card .images-container.grid .image:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img-1;
+}
+
+.trademarks-page a .trademark-card .images-container.grid .image:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img-2;
+}
+
+.trademarks-page a .trademark-card .images-container.grid .image:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img-3;
+}
+
+.trademarks-page a .trademark-card .images-container.single {
+  display: block;
+}
+
+.trademarks-page a .trademark-card .images-container.single .image {
+  padding: 15px;
+}
+/*# sourceMappingURL=index.css.map */

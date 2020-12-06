@@ -1,0 +1,134 @@
+.hamburger-nav {
+    font-family: 'Poppins';
+
+    .btn {
+        position: fixed;
+        z-index: 100;
+        left: 20px;
+        top: 22px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        span {
+            width: 30px;
+            height: 4px;
+            margin: 3px;
+            background: rgb(82, 82, 82);
+            border-radius: 2px;
+
+            &:nth-child(2) {
+                width: 20px;
+            }
+        }
+    }
+
+    .black-diaphragm {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(39, 39, 39, 0.5);
+    }
+
+    .list-items {
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        z-index: 102;
+        padding-bottom: 50px;
+        top: 0;
+        left: -100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
+        overflow: auto;
+
+        a {
+            $fontsize: 17px;
+
+            text-decoration: none;
+            color: rgb(46, 46, 46);
+            padding: 10px;
+            font-size: $fontsize;
+
+            .login-register {
+                color: #F37990 !important;
+                font-size: $fontsize;
+            }
+        }
+
+        .divided-line {
+            width: 100%;
+            height: 0px;
+            // background: rgb(185, 185, 185);
+            border-top: 1px solid rgb(185, 185, 185);
+            margin: 5px 0;
+        }
+
+        h3.title {
+            padding: 3px 10px;
+            color: rgb(66, 66, 66);
+        }
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    .user-intro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        .avatar-user {
+            $avatar-size: 60px;
+            width: $avatar-size;
+            height: $avatar-size;
+            margin: 10px;
+            img {
+                width: $avatar-size;
+                height: $avatar-size;
+                border-radius: 50%;
+            }
+        }
+
+        .texts-user {
+            margin-left: 5px;
+            h3 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 150px;
+            }
+            h4 {
+                font-weight: 400;
+                color: rgb(117, 117, 117);
+                margin-top: 5px;
+            }
+        }
+
+    }
+
+    .list-btn {
+        display: flex;
+        flex-direction: column;
+        a {
+            display: flex;
+            flex-direction: row;
+            p {
+                margin-right: 10px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 741px) {
+    .hamburger-nav {
+        display: none;
+    }
+}

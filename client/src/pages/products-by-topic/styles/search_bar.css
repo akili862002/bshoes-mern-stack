@@ -1,0 +1,111 @@
+.products-by-topic-page .search-container {
+  z-index: 9;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid #A4A4A4;
+  background: #F2F2F2;
+  padding: 8px;
+  margin-top: 30px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.products-by-topic-page .search-container img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.products-by-topic-page .search-container input {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  font-family: 'Poppins';
+}
+
+.products-by-topic-page .search-container .suggestions-container {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  max-width: 750px;
+  top: 120%;
+  left: 0;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #cacaca;
+  display: none;
+}
+
+.products-by-topic-page .search-container .suggestions-container a .suggestion-item {
+  position: relative;
+  padding: 3px 20px;
+  font-family: 'Poppins';
+  -webkit-animation-name: left-to-right-appear;
+          animation-name: left-to-right-appear;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.products-by-topic-page .search-container .suggestions-container a .suggestion-item .name {
+  font-size: 15px;
+  font-weight: 300;
+  color: #686868;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+
+.products-by-topic-page .search-container .suggestions-container a .suggestion-item .name strong {
+  color: #2e2e2e;
+}
+
+.products-by-topic-page .search-container .suggestions-container a .suggestion-item .trademark {
+  font-size: 12px;
+  color: #979797;
+}
+
+.products-by-topic-page .search-container .suggestions-container a .suggestion-item:hover {
+  -webkit-box-shadow: 0 0 5px rgba(34, 34, 34, 0.5);
+          box-shadow: 0 0 5px rgba(34, 34, 34, 0.5);
+}
+
+@-webkit-keyframes left-to-right-appear {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left-to-right-appear {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=search_bar.css.map */

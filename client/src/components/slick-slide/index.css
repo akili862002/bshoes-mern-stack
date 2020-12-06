@@ -1,0 +1,148 @@
+.slick-slide {
+  position: relative;
+  margin-top: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+
+.slick-slide ul {
+  position: relative;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-slide ul li {
+  display: inline;
+  margin: 0 50px;
+}
+
+@-webkit-keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes smooth-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slick-slide ul li .see-more-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 100%;
+  background: #f0f0f0;
+  border-radius: 30px;
+}
+
+.slick-slide ul li .see-more-card h3 {
+  color: #4b4b4b;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.slick-slide .control-slide {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 6px rgba(54, 54, 54, 0.5);
+          box-shadow: 0 0 6px rgba(54, 54, 54, 0.5);
+  cursor: pointer;
+}
+
+.slick-slide .control-slide.next-slide {
+  right: 10px;
+}
+
+.slick-slide .control-slide.next-slide img {
+  margin-right: 8px;
+}
+
+.slick-slide .control-slide.prev-slide {
+  left: 10px;
+}
+
+.slick-slide .control-slide.prev-slide img {
+  margin-left: 8px;
+}
+
+.slick-slide .control-slide.hide {
+  display: none;
+}
+
+.slick-slide .control-slide img {
+  width: 25px;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 480px) {
+  .slick-slide {
+    width: 100% !important;
+    height: 100%;
+    overflow: hidden;
+  }
+  .slick-slide ul {
+    height: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+  }
+  .slick-slide ul::-webkit-scrollbar {
+    height: 0;
+    /* Safari and Chrome */
+  }
+  .slick-slide ul li {
+    margin: 10px !important;
+  }
+  .slick-slide ul li .image-box {
+    min-height: 130px !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .slick-slide li.see-more-btn {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .slick-slide .control-slide {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

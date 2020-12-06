@@ -1,0 +1,162 @@
+.slick-slide ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  width: 200px;
+}
+
+.slick-slide ul li .image-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.slick-slide ul li .rate-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.slick-slide ul li .rate-product .number-people-rate {
+  color: #6e6e6e;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.slick-slide ul li .name-product {
+  font-family: 'Poppins';
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.slick-slide ul li .cost-product.discounting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-slide ul li .cost-product.discounting .current-cost {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.slick-slide ul li .cost-product.discounting .real-cost {
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #858585;
+  text-decoration: line-through;
+}
+
+.slick-slide ul li .cost-product.not-discount .current-cost {
+  display: none;
+}
+
+.slick-slide ul li .cost-product.not-discount .real-cost {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.slick-slide ul li .sale-sign {
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+
+.slick-slide ul li .sale-sign.discounting img {
+  position: relative;
+  width: 40px;
+}
+
+.slick-slide ul li .sale-sign.discounting h5 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.slick-slide ul li .sale-sign.not-discount {
+  display: none;
+}
+
+.slick-slide ul li .buttons {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  margin: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slick-slide ul li .buttons .btn {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+
+.slick-slide ul li .buttons .btn svg {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+.slick-slide ul li .buttons .btn:hover {
+  background: black;
+}
+
+.slick-slide ul li .buttons .btn:hover svg {
+  fill: #ff97aa;
+}
+
+.slick-slide ul li:hover .buttons {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+/*# sourceMappingURL=product-show-in-slick-slider.css.map */

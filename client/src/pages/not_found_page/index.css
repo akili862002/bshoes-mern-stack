@@ -1,0 +1,68 @@
+.container-not-found-page {
+    margin-top: 40px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-not-found-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-not-found a {
+    color: #f14f6d;
+}
+
+.page-not-found img {
+    margin: 50px;
+    width: 200px;
+    opacity: 0.5;
+    animation-name: float-ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes float-ani {
+    0% {
+        transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+}
+
+.page-not-found h4 {
+    color: #777;
+    text-align: center;
+}
+
+.page-not-found p {
+    font-size: 1.4em;
+    line-height: 30px;
+    text-align: center;
+}
+
+.heading-primary {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 479px) {
+    .page-not-found {
+        margin: 0;
+    }
+
+    .page-not-found h2 {
+        font-size: 100px;
+        letter-spacing: 0;
+        line-height: 100px;
+    }
+}
